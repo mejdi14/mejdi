@@ -1,7 +1,7 @@
 <template>
     <div class="col-1-of-2 project">
         <div class="project__item">
-            <img class="project__img" :src="'/img/' + project.img" alt="Project Image">
+            <img class="project__img" :src="'img/' + project.img" alt="Project Image">
             <div class="project__overlay">
                 <div class="project__buttons">
                     <button href="#" class="project__button" @click="showProject = true">
@@ -17,7 +17,7 @@
                 <button class="project__close" @click="showProject = false"><font-awesome-icon icon="times" /></button>
 
                 <div class="project__left">
-                    <img class="project__img--modal" :src="'/img/' + project.img" alt="Project Image">
+                    <img class="project__img--modal" :src="'img/' + project.img" alt="Project Image">
                 </div
 
                 ><div class="project__right">
