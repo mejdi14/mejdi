@@ -1,5 +1,8 @@
 set -e
 
+@echo off
+  echo.>"E:\martin\final\mejdi\dblank.txt"
+
 git add -A
 git commit -m 'update'
 
