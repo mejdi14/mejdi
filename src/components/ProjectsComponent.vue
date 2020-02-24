@@ -13,6 +13,23 @@
             <project-component :project="projects.portfolio" :class="{'slide-left': loading}">
 
             </project-component>
+            <project-component :project="projects.books" :class="{'slide-right': loading}">
+
+            </project-component>
+        </div>
+        <div class="row">
+        <project-component :project="projects.music" :class="{'slide-left': loading}">
+
+        </project-component>
+        <project-component :project="projects.profile" :class="{'slide-right': loading}">
+
+        </project-component>
+    </div>
+        <div class="row">
+            <project-component :project="projects.rating" :class="{'slide-left': loading}">
+
+            </project-component>
+
         </div>
     </div>
 </template>
@@ -55,7 +72,7 @@ export default {
                 name: 'Dux Mobile',
                 summary: "This was the biggest project i have worked on yet. The goal was to help commercials in their daily work, this project gave me the chance to try many new features and technologies. \n\n I bounced many hats during this project and worked a lot on things like MVVM design pattern, rxJava, live data, view models, WebSocket for realtime notifications and more.",
                 img: 'duxmobile.png',
-                demo: 'https://play.google.com/store/apps/details?id=com.asmtunis.dux&hl=en',
+                demo: 'https://photos.app.goo.gl/GbqD2zX1PMq6hi4p8',
                 code: 'private',
                 technologies: 
                 [
@@ -89,7 +106,89 @@ export default {
                     {name: 'Jitpack'},
                     {name: 'UI/UX'},
                 ]
-            }
+            },
+            books:
+                {
+                    name: 'Books swipe exemple',
+                    summary: 'my first open source project with kotlin, i learned with this project how to work with complex animations and how to use git flow and kraken to boost my work',
+                    img: 'preview.gif',
+                    demo: 'https://github.com/mejdi14/BooksSwipe',
+                    code: 'https://github.com/mejdi14/BooksSwipe',
+                    technologies:
+                        [
+                            {name: 'Android'},
+                            {name: 'Kotlin'},
+                            {name: 'Xml'},
+                            {name: 'Github'},
+                            {name: 'Jitpack'},
+                            {name: 'UI/UX'},
+                            {name: 'Constraint Layout'},
+                            {name: 'Git Flow'},
+                            {name: 'Git kraken'},
+                            {name: 'Github Actions'},
+                        ]
+                },
+            profile:
+                {
+                    name: 'Android Profile Design',
+                    summary: 'the goal with this project was simple, i had to create a pretty profile page with constraint layout and use motion layout to make it more alive',
+                    img: 'profile.jpg',
+                    demo: 'https://github.com/mejdi14/ProfileDesign',
+                    code: 'https://github.com/mejdi14/ProfileDesign',
+                    technologies:
+                        [
+                            {name: 'Android'},
+                            {name: 'Java'},
+                            {name: 'Xml'},
+                            {name: 'Github'},
+                            {name: 'Jitpack'},
+                            {name: 'UI/UX'},
+                            {name: 'Constraint Layout'},
+                            {name: 'Motion layout'},
+                            {name: 'ShapeableImageView'},
+                            {name: 'circle-ci'},
+                        ]
+                },
+            rating:
+                {
+                    name: 'Rate My App',
+                    summary: 'an open source project which helps you asking the user to rate your application',
+                    img: 'feedback.gif',
+                    demo: 'https://github.com/mejdi14/AndroidFeedBack',
+                    code: 'https://github.com/mejdi14/AndroidFeedBack',
+                    technologies:
+                        [
+                            {name: 'Android'},
+                            {name: 'Java'},
+                            {name: 'Xml'},
+                            {name: 'Github'},
+                            {name: 'Jitpack'},
+                            {name: 'UI/UX'},
+                            {name: 'Constraint Layout'},
+                            {name: 'Github Actions'},
+                        ]
+                },
+            music:
+                {
+                    name: 'Music Design App',
+                    summary: 'this is a music application which shows my favorite music list !',
+                    img: 'music.png',
+                    demo: 'https://github.com/mejdi14/music-app-design',
+                    code: 'https://github.com/mejdi14/music-app-design',
+                    technologies:
+                        [
+                            {name: 'Android'},
+                            {name: 'Java'},
+                            {name: 'Xml'},
+                            {name: 'Github'},
+                            {name: 'Jitpack'},
+                            {name: 'UI/UX'},
+                            {name: 'Constraint Layout'},
+                            {name: 'Motion layout'},
+                            {name: 'shared items'},
+                            {name: 'Github Actions'},
+                        ]
+                }
         }
     }},
     mounted()
