@@ -13,7 +13,7 @@
             <project-component :project="projects.portfolio" :class="{'slide-left': loading}">
 
             </project-component>
-            <project-component :project="projects.books" :class="{'slide-right': loading}">
+            <project-component :project="projects.arcore" :class="{'slide-right': loading}">
 
             </project-component>
         </div>
@@ -21,7 +21,7 @@
         <project-component :project="projects.music" :class="{'slide-left': loading}">
 
         </project-component>
-        <project-component :project="projects.profile" :class="{'slide-right': loading}">
+            <project-component :project="projects.books" :class="{'slide-right': loading}">
 
         </project-component>
     </div>
@@ -29,7 +29,9 @@
             <project-component :project="projects.rating" :class="{'slide-left': loading}">
 
             </project-component>
+            <project-component :project="projects.profile" :class="{'slide-right': loading}">
 
+            </project-component>
         </div>
     </div>
 </template>
@@ -186,6 +188,23 @@ export default {
                             {name: 'Constraint Layout'},
                             {name: 'Motion layout'},
                             {name: 'shared items'},
+                            {name: 'Github Actions'},
+                        ]
+                },
+            arcore:
+                {
+                    name: 'Green Forest ARCore',
+                    summary: 'now you can make your house look live an beautiful using android ARCore !',
+                    img: 'forest.png',
+                    demo: 'https://www.youtube.com/watch?v=zb6w-m6mEz8',
+                    code: 'https://github.com/mejdi14/ARGreenForest',
+                    technologies:
+                        [
+                            {name: 'Android'},
+                            {name: 'Java'},
+                            {name: 'Xml'},
+                            {name: 'Github'},
+                            {name: 'ARCore'},
                             {name: 'Github Actions'},
                         ]
                 }
